@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.flxbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flexcol {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.App {
+  text-align: center;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.mainpgcontainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfffd;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.startingContainer {
+  width: 60%;
+  min-height: 550px;
+  -webkit-box-shadow: 4px 6px 7px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: 4px 6px 7px 5px rgba(0, 0, 0, 0.19);
+  background-color: #8497c2;
+  opacity: 0.9;
+}
+.instraccotaier {
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.startconatiner {
+  height: 150px;
+  color: #000;
+  font-size: 16px;
+}
+.btn {
+  font-size: 30px;
+  background-color: #fff;
+  color: #e3548c;
+  outline: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.testtitle {
+  width: 98%;
+  margin: 0px auto;
+}
+.quizOption {
+  width: 50%;
+}
+.passstudent {
+  font-size: 28px;
+  color: green;
+}
+.failstudent {
+  font-size: 28px;
+  color: red;
+}
+@media screen and (max-width: 480px) {
+  .startingContainer {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  .testtitle > h1 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+  .testtitle > .resulttitle {
+    text-align: center;
   }
 }
